@@ -3,6 +3,7 @@ const config = require('./config/website')
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
 
 module.exports = {
+
   /* General Information */
   siteMetadata: {
     siteUrl: config.siteUrl + pathPrefix,
@@ -36,8 +37,7 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: 'standalone',
-        icons: [
-          {
+        icons: [{
             src: '/favicons/android-chrome-192x192.png',
             sizes: '192x192',
             type: 'image/png',
